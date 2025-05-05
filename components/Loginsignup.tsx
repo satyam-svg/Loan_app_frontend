@@ -104,23 +104,6 @@ const AuthForm = () => {
                 className="space-y-5"
               >
                 {/* Name Field (Signup only) */}
-                {!isLogin && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    className="space-y-2"
-                  >
-                    <label className="flex items-center gap-2 text-gray-700">
-                      <User className="w-5 h-5 text-purple-600" />
-                      <span className="text-sm font-medium">Full Name</span>
-                    </label>
-                    <input
-                      type="text"
-                      className="w-full px-3 py-2.5 rounded-lg bg-gray-50 border border-gray-200 focus:border-purple-500 focus:ring-2 focus:ring-purple-100 outline-none transition-all placeholder-gray-400 text-sm"
-                      placeholder="John Doe"
-                    />
-                  </motion.div>
-                )}
 
                 {/* Email Field */}
                 <div className="space-y-2">
